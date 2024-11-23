@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,37 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>LDU factorisation</h1>
     <p>To decompose A in L,D and U`, first we need order of matrix A.</p>
     <input type="text" id="order" placeholder="Enter order">
-    <button onclick="takeorder('order')" > enter order of matrix A</button>
+    <button onclick="takeorder('order')"> enter order of matrix A</button>
     <p>Matrix A:-</p>
-    <button onclick="getInputfield('inputfield')" > enter value for matrix A</button>
+    <button onclick="getInputfield('inputfield')"> enter value for matrix A</button>
     <div id="inputfield">
-        
+
     </div>
-    <button onclick="savematrixA()" >Click here to save matrix A</button>
+    <button onclick="savematrixA()">Click here to save matrix A</button>
     <div>
-    <button onclick="showMatrix('showmatrix')" >Click here to get matrix A</button>
-    <div id="showmatrix">
-        
-    </div>
-    </div>
+        <button onclick="showMatrix('showmatrix')">Click here to get matrix A</button>
+        <div id="showmatrix">
 
-
+        </div>
+    </div>
     
+    <div id="um">
+        <h2>U (upper triangular) matrix :-</h2>
+        <p>for finding Matrix U , first we need to find all Elimination matrices and multiply <br>one by one with matrix
+            A and then we will get U matrix. </p>
+        <button onclick="Umatrix('showUmatrix')"> click here get all Elimination Matrix and U matrix </button>
+        <div id="showUmatrix">
+
+        </div>
+    </div>
+
+
 
 </body>
+
 </html>

@@ -91,3 +91,28 @@ function multwomat(m,mm){
     return mul
 }
 
+
+// function to create U matrix
+function Umatrix(id) {
+    U = a.map(row => [...row]);
+
+    let tempEM = makeIdentity();
+    EM = makeIdentity();
+
+    for (let i=0; i<n; i++) {
+        for(let j=i+1; j<n; j++) {
+            let mf = -(U[j][i]/U[i][i]);
+            tempEM = makeEM(j, i, mf);
+            document.getElementById(id).innerHTML += `<h3>Elimination Matrix E${j+1}${i+1}</h3>${matrixFormat(tempEM)}` + `<br>`;
+            EM=multwomat(tempEM,EM)
+
+            for (let k=0; k<n; k++) {
+                U[j][k] += mf*U[i][k];
+            }
+            
+        }
+    }
+    document.getElementById(id).innerHTML += `<h3>U Matrix</h3>` + matrixFormat(U);
+    document.getElementById(id).innerHTML += `<h3>Product of all Elimination Matrix</h3>` + matrixFormat(EM);
+}
+
