@@ -2,9 +2,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color:#8ab2f8;
     color:rgb(7, 5, 5);
     text-align: center;
+    background-image: url('math-colourful-rulers-supplies-with-copy-space.jpg'); /* Add the path to your image */
+    background-size:cover;
+    background-position: 150rem; 
 }
 
 h1 {
