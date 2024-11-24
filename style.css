@@ -1,0 +1,37 @@
+#showmatrix {
+    margin-top: 5px;
+
+}
+#lmat{
+    margin-top: 60px;
+}
+#um{
+    margin-top: 60px;
+}
+#uumaat{
+    margin-top: 60px;
+}
+#dmaat{
+    margin-top: 60px;
+}
+#compare {
+    display: flex;
+}
+#aamatrix{
+    margin-left: 40px;
+}
+#AMAT{
+    margin-top: 15px;
+}
+#LDU{
+    margin-top: 15PX;
+}
+#dmat{
+    margin-top: 15px;
+}
+#uumat{
+    margin-top: 15px;
+}
+#showlmatrix{
+    margin-top: 15px;    
+}

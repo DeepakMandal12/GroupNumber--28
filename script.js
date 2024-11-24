@@ -164,3 +164,16 @@ function Dmatrix(dmat){
 
     document.getElementById(dmat).innerHTML+=matrixFormat(D);
 }
+
+function multiplyLDU(LDU){
+    DD=multwomat(D,Uu)
+    Aa=multwomat(L,DD)
+
+    document.getElementById(LDU).innerHTML+=matrixFormat(Aa)
+}
+
+function Amatrix(AMAT){
+    document.getElementById(AMAT).innerHTML+=matrixFormat(a)
+}  
+
+
