@@ -1,37 +1,117 @@
-#showmatrix {
-    margin-top: 5px;
+/* General body and font styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:#8ab2f8;
+    color:rgb(7, 5, 5);
+    text-align: center;
+}
 
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-size: 50px;
 }
-#lmat{
-    margin-top: 60px;
+
+h2 {
+    color: #070b0e;
+    font-size: x-large;
 }
-#um{
-    margin-top: 60px;
+
+p {
+    line-height: 1.6;
+    font-size: 20px;
 }
-#uumaat{
-    margin-top: 60px;
+
+/* Styling for buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
-#dmaat{
-    margin-top: 60px;
+
+button:hover {
+    background-color: #45a049;
 }
+
+button:focus {
+    outline: none;
+}
+
+/* Styling for the input field */
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    
+}
+
+input[type="text"]:focus {
+    outline-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Styling for the sections */
+div {
+    margin-bottom: 30px;
+}
+
+/* Styling for specific divs with more space */
+#inputfield, #showmatrix, #showUmatrix, #showlmatrix, #uumat, #dmat, #AMAT, #LDU {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 60px;
+    position: relative;
+    left: 33%;
+    width: 30%
+    
+}
+
+/* Formatting the compare section */
 #compare {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-#aamatrix{
-    margin-left: 40px;
+
+#compare div {
+    width: 48%;
 }
-#AMAT{
-    margin-top: 15px;
-}
-#LDU{
-    margin-top: 15PX;
-}
-#dmat{
-    margin-top: 15px;
-}
-#uumat{
-    margin-top: 15px;
-}
-#showlmatrix{
-    margin-top: 15px;    
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #compare {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #compare div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        align-self: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
 }
