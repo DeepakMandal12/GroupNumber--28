@@ -9,6 +9,7 @@ let D=[]
 
 function takeorder(id){
     n = document.getElementById(id).value;
+    alert("order saved successfully")
 }
 
 function getInputfield(id) {
@@ -30,6 +31,7 @@ function savematrixA() {
         }
         a.push(row);
     }
+    alert("matrix A saved successfully")
 }
 
 function showMatrix( id) {
@@ -38,7 +40,7 @@ function showMatrix( id) {
 }
 
 
-
+// function for making identity matrix
 function makeIdentity() {
     let mat = [];
     for (let i = 0; i < n; i++) {
@@ -55,7 +57,7 @@ function makeIdentity() {
     return mat;
 }
 
-
+// change from list to matrix format
 function matrixFormat(lst) {
     let matStr = "";  
     for (let i of lst) {
@@ -68,13 +70,13 @@ function matrixFormat(lst) {
     return matStr;
 }
 
-
+//function for making elimination matrix
 function makeEM(row, col, value) {
     let mat = makeIdentity();
     mat[row][col] = value;
     return mat;
 } 
-
+// function for multiplication of two matrix
 function multwomat(m,mm){
     mul=[]
     for (let i=0;i<n;i++){
@@ -115,7 +117,7 @@ function Umatrix(id) {
     document.getElementById(id).innerHTML += `<h3>Product of all Elimination Matrix</h3>` + matrixFormat(EM);
 }
 
-
+// function for making L matrix
 function lmatrix(id){
     L =makeIdentity();
     for (let i = 0; i < n; i++) {
@@ -139,6 +141,8 @@ function lmatrix(id){
     
     document.getElementById(id).innerHTML += matrixFormat(L);
 }
+
+// function for U` matrix
 function UUmatrix(uumat){
     for (let i=0;i<n;i++){
         r=[]
@@ -151,6 +155,7 @@ function UUmatrix(uumat){
     document.getElementById(uumat).innerHTML+=matrixFormat(Uu);
 }
 
+// function for D matrix
 function Dmatrix(dmat){
     for (let i=0;i<n;i++){
         D[i] = [];
