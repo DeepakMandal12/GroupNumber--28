@@ -170,11 +170,13 @@ function Dmatrix(dmat){
     document.getElementById(dmat).innerHTML+=matrixFormat(D);
 }
 
-function multiplyLDU(LDU){
+function multiplyLDU(LDU,varify){
     DD=multwomat(D,Uu)
     Aa=multwomat(L,DD)
 
     document.getElementById(LDU).innerHTML+=matrixFormat(Aa)
+    document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is varified."
+
 }
 
 function Amatrix(AMAT){
