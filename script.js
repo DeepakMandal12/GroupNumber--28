@@ -9,7 +9,7 @@ let D=[]
 
 function takeorder(id){
     n = document.getElementById(id).value;
-    alert("order saved successfully")
+    alert("Order saved successfully")
 }
 
 function getInputfield(id) {
@@ -31,7 +31,7 @@ function savematrixA() {
         }
         a.push(row);
     }
-    alert("matrix A saved successfully")
+    alert("Matrix A saved successfully")
 }
 
 function showMatrix( id) {
@@ -175,7 +175,7 @@ function multiplyLDU(LDU,varify){
     Aa=multwomat(L,DD)
 
     document.getElementById(LDU).innerHTML+=matrixFormat(Aa)
-    document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is varified."
+    document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is verified."
 
 }
 
