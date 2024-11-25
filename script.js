@@ -7,37 +7,14 @@ let Uu=[];
 let D=[]
 
 
-function takeorder(id){
-    n = document.getElementById(id).value;
-    alert("order saved successfully")
-}
 
-function getInputfield(id) {
-    
-    for (let i = 0; i < n; i++) {
-        for (let j = 0; j < n; j++) {
-            document.getElementById(id).innerHTML += `<input type="text" id="a${i+1}${j+1}" placeholder = "Enter value for ${i+1}${j+1}"> `;
-        }
-        document.getElementById(id).innerHTML += `<br>`;
     }
 }
 
 function savematrixA() {
     for (let i=0; i<n; i++) {
         let row = [];
-        for (let j=0; j<n; j++) {
-            let value = parseFloat(document.getElementById(`a${i+1}${j+1}`).value);
-            row.push(value);
-        }
-        a.push(row);
-    }
-    alert("matrix A saved successfully")
-}
 
-function showMatrix( id) {
-    
-    document.getElementById(id).innerHTML += matrixFormat(a);
-}
 
 
 // function for making identity matrix
