@@ -175,7 +175,7 @@ function multiplyLDU(LDU,varify){
     Aa=multwomat(L,DD)
 
     document.getElementById(LDU).innerHTML+=matrixFormat(Aa)
-    document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is varified."
+    document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is verified."
 
 }
 
