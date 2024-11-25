@@ -7,6 +7,7 @@ let Uu=[];
 let D=[]
 
 
+
 function takeorder(id){
     n = document.getElementById(id).value;
     alert("Order saved successfully")
@@ -38,6 +39,7 @@ function showMatrix( id) {
     
     document.getElementById(id).innerHTML += matrixFormat(a);
 }
+
 
 
 // function for making identity matrix
@@ -175,6 +177,7 @@ function multiplyLDU(LDU,varify){
     Aa=multwomat(L,DD)
 
     document.getElementById(LDU).innerHTML+=matrixFormat(Aa)
+    document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is verified."
     document.getElementById(varify).innerHTML+="We can clearly see that matrix A and matrix A`(LDU`) are equal.<br>Hence LDU factorisation is verified."
 
 }
